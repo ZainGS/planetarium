@@ -3,9 +3,7 @@
 See your repositories as 3D constellations, and watch Claude Code agents move through them live.
 Planetarium also catches agents that are about to overwrite each other's work.
 
-<!-- Screenshot: save one as docs/screenshot.png, then remove these comment markers.
-![Planetarium showing two repos as constellations, with agents working in them](docs/screenshot.png)
--->
+![Planetarium showing four repos as constellations](docs/screenshot.png)
 
 Each repo you add becomes a constellation: the bright core star is the repo root, folders branch
 outward, and files cluster around their folder. Connect Claude Code and every agent shows up as a
