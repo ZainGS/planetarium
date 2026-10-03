@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ES2022",
+    "moduleResolution": "bundler",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "strict": true,
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+    "rootDir": ".",
+    "outDir": "web/out",
+    "sourceMap": false,
+    "skipLibCheck": true,
+    "types": []
+  },
+  "include": ["webgpu_core/**/*.ts", "app/src/**/*.ts", "types/*.d.ts"]
+}

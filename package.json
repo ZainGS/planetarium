@@ -1,0 +1,14 @@
+{
+  "name": "planetarium",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build:web": "tsc -p .",
+    "watch:web": "tsc -p . --watch",
+    "test": "tsc -p . && node --test tests/*.test.mjs"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3"
+  }
+}

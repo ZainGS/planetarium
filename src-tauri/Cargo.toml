@@ -1,0 +1,27 @@
+[package]
+name = "planetarium"
+version = "0.1.0"
+description = "See your repositories as 3D constellations, and the coding agents working in them."
+edition = "2021"
+license = "MIT"
+rust-version = "1.80"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = ["tray-icon"] }
+tauri-plugin-dialog = "2"
+tauri-plugin-single-instance = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1", features = ["preserve_order"] }
+tiny_http = "0.12"
+notify = "8"
+
+[profile.release]
+# Small, fast binary: this is the part that keeps running in the tray.
+codegen-units = 1
+lto = true
+opt-level = "s"
+panic = "abort"
+strip = true
